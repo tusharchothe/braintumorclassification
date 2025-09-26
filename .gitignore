@@ -1,0 +1,27 @@
+# Model files (too large for git)
+*.keras
+*.h5
+*.pkl
+
+# Dataset
+Dataset/
+*.jpg
+*.jpeg
+*.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+ml_env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Windows batch files
+*.bat
