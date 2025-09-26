@@ -1,38 +1,27 @@
-# Brain Tumor Detection
 
-AI-powered brain tumor classification using fused MRI and CT scan images with 95.9% accuracy.
+# Brain Tumor Classification
 
-## Model Performance
-- **Accuracy**: 95.9%
-- **Architecture**: Custom CNN with image fusion
-- **Input**: 224x224 RGB images
-- **Classes**: Healthy, Tumor
+This project uses deep learning to classify brain tumor images from CT and MRI scans. It includes:
+- Data preprocessing and augmentation
+- CNN model training and evaluation
+- Flask web app for image upload and prediction
 
-## Quick Start
-
-### Flask App
-```bash
-pip install -r flask_requirements.txt
-python flask_app.py
-```
-Open http://127.0.0.1:5000
-
-### Streamlit App
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-## Files
-- `braintumor.ipynb` - Model training notebook
-- `fused_cnn_model.keras` - Trained model
-- `flask_app.py` - Flask web application
-- `app.py` - Streamlit application
+## Project Structure
+- `app.py`: Main application logic (Streamlit)
+- `flask_app.py`: Flask web server for predictions
+- `braintumor.ipynb`: Jupyter notebook for model development
+- `Dataset/`: Contains CT and MRI images (Healthy and Tumor)
+- `templates/index.html`: Web app frontend
+- `requirements.txt`, `flask_requirements.txt`: Python dependencies
+- `best_cnn.keras`, `fused_cnn_model.keras`: Saved models
 
 ## Usage
-Upload a brain scan image (MRI or CT) to get instant tumor detection results with confidence scores.
+1. Install dependencies: `pip install -r requirements.txt` or `pip install -r flask_requirements.txt`
+2. Run the Flask app: `python flask_app.py` or Streamlit app: `streamlit run app.py`
+3. Access the web interface to upload images and get predictions
 
 ## Dataset
-- MRI and CT scan images
-- Binary classification: Healthy vs Tumor
-- Image fusion technique for improved accuracy
+- CT and MRI images categorized as Healthy or Tumor
+
+## Author
+- GitHub: [tusharchothe](https://github.com/tusharchothe)
