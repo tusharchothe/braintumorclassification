@@ -7,7 +7,7 @@ This project uses deep learning to classify brain tumor images from CT and MRI s
 - Flask web app for image upload and prediction
 
 ## Project Structure
-- `app.py`: Main application logic (Streamlit)
+- `app.py`: Main application logic 
 - `flask_app.py`: Flask web server for predictions
 - `braintumor.ipynb`: Jupyter notebook for model development
 - `Dataset/`: Contains CT and MRI images (Healthy and Tumor)
